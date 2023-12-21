@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+            *{
+                margin:0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: sans-serif;
+                background-color: orange;
+            }
+            .container{
+                width:80%;
+                margin: 50px auto;
+                padding: 20px;
+            }
+            .title{
+                text-align: center;
+                font-size: 45px;
+                font-weight: bold;
+                margin-bottom: 70px;
+            }
+            .about-content{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .image{
+                flex: 1;
+                margin-left: 20px;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            .image img{
+                width: 100%;
+                transition: transform 0.3s ease;
+            }
+            .image:hover img{
+                transform: scale(1.1);
+            }
+            .content{
+                flex: 1;
+                margin-left: 20px;
+            }
+            .content p{
+                font-size: 17px;
+                line-height: 1.6;
+            }
+            .readmore{
+                margin-top: 20px;
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #4caf50;
+                font-size: 17px;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 10px;
+                transition: 0.3s ease;
+            }
+            .readmore:hover{
+                background-color: #ccbb25;
+            }
+            @media screen and (max-width){
+                .about-content{
+                    flex-direction: column;
+                }
+                .image, .content{
+                    margin: 0;
+                    margin-bottom: 20px;
+                }
+                
+            }
+
+  </style>
+</head>
+<body>
+    <button type="button"><a href="file:///C:/Local%20Disk%20D/Web%20Class%20HW/my%20portfolio/index.html">Back to Home</a></button>
+  <div class="container">
+    <h1 class="title">About</h1>
+    <div class="about-content"><img src="girl.jpeg" alt="girl"></div>
+    <div class="content">
+      <p>I'm Leena Roshini from Namakkal. I completed my schooling at SSVM Higher Secondary School, Karur. I'm currently pursuing a degree in Computer Applications at KG College of Arts and Science, Saravanampatti.
+      I manage my time by doing hobbies such as reading books and watching movies. The most interesting fact about my hobbies is that they help me learn soft skills like speaking and English fluency.</p><a href="" class="readmore">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
